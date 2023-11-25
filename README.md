@@ -87,8 +87,12 @@ Message ID: <c4d74337-bdbc-ce00-c32a-bc60002d035b@gmail.com>
 edouardlevesque@Edouards-MacBook-Pro sourcecode % 
 ```
 
-Going to the website [mailinator.com]('https://www.mailinator.com/'). We can enter any user names of these users and see what they get on their end (these are not real people or used emails). For instance, let's see that etham_thom@mailinator.com, who did in fact get the fake job.
+Going to the website [mailinator.com]('https://www.mailinator.com/'). We can enter any user names of these users and see what they get on their end (these are not real people or used emails). For instance, let's see that ethan_thom@mailinator.com, who did in fact get the fake job.
 
-![inp2](https://i.ibb.co/3M6gjqm/Screenshot-2023-10-11-at-10-56-35-PM.png)
+![inp1](https://github.com/CS2613-FA23/explorationactivity2-edouardlev/blob/main/enter-email.jpg?raw=true)
 
+We enter ethan_thom in the 'Enter public Mailinator Inbox' field.
+The latest email should be the one we just sent.
+
+![inp2](https://github.com/CS2613-FA23/explorationactivity2-edouardlev/blob/main/enter-email.jpg?raw=true)
 

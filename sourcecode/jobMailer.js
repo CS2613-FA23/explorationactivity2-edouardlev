@@ -68,6 +68,7 @@ async function readCSV(url) {
   }
 }
 
+
 function processData(data) {
   const lines = data.split("\n");
   for(let i = 1; i < lines.length; i++) {
@@ -80,7 +81,7 @@ function processData(data) {
   //console.log(offer);
 }
 
-function offerSender() {
+async function offerSender() {
 
 
   for(let i = 0; i < names.length; i++) {
@@ -98,7 +99,7 @@ function offerSender() {
       //console.log(emailContent);
 
     }
-   sendEmail(emailContent, emails[i], position[i]);
+   await sendEmail(emailContent, emails[i], position[i]);
   }
 
 }
