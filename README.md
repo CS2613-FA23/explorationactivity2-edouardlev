@@ -2,7 +2,7 @@
 # ExplorationActivity2 README.md
 ## By Edouard Levesque
 ### Which library my sample program demonstrates
-My library demonstrates the use of automated email sending with the use of of the Nodemailer library. It is a library with the main purpose of simplifying the use of sending emails programatically.
+My library demonstrates the use of automated email sending with the use of of the [Nodemailer](https://nodemailer.com/) library. It is a library with the main purpose of simplifying the use of sending emails programatically.
 
 ### How to run my sample program
 
@@ -100,7 +100,7 @@ The latest email should be the one we just sent.
 
 We can see the email correctly was personalised with the name, job position, and with the fact he got the job. Now let's see what it looks like for someone who did not get the position.
 
-
+![inp4](https://github.com/CS2613-FA23/explorationactivity2-edouardlev/blob/main/email-preview.jpg?raw=true)
 
 
 
