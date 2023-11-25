@@ -94,5 +94,13 @@ Going to the website [mailinator.com]('https://www.mailinator.com/'). We can ent
 We enter ethan_thom in the 'Enter public Mailinator Inbox' field.
 The latest email should be the one we just sent.
 
-![inp2](https://github.com/CS2613-FA23/explorationactivity2-edouardlev/blob/main/enter-email.jpg?raw=true)
+![inp2](https://github.com/CS2613-FA23/explorationactivity2-edouardlev/blob/main/inbox-preview.jpg?raw=true)
+
+![inp3](https://github.com/CS2613-FA23/explorationactivity2-edouardlev/blob/main/email-preview.jpg?raw=true)
+
+We can see the email correctly was personalised with the name, job position, and with the fact he got the job. Now let's see what it looks like for someone who did not get the position.
+
+
+
+
 
