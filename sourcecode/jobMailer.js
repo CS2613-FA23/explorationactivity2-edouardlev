@@ -45,6 +45,7 @@ let mailOptions = {
 transpo.sendMail(mailOptions, (error, info) => {
     if (error) {
         console.error('Error occurred: ', error.message);
+        console.log("with email: " + emailOut)
 
     } else {
     console.log('Email sent to ' + emailOut);
@@ -62,7 +63,7 @@ async function readCSV(url) {
 
     offerSender();
   } catch (error) {
-    console.error('Error reading csv file:', error);
+    console.log('Error reading csv file, please ensure the link you provided leads to raw CSV content with the correct format.');
     return;
   }
 }
@@ -80,8 +81,9 @@ function processData(data) {
 }
 
 function offerSender() {
-  
-  for(let i = 0; i < 1; i++) {
+
+
+  for(let i = 0; i < names.length; i++) {
     //console.log(names.length);
     if(offer[i]==='yes'){
       emailContent = "Hello, " + names[i].split(" ")[0] + "\n\nWe really enjoyed talking with you and we would like to offer you the position of "
@@ -96,12 +98,16 @@ function offerSender() {
       //console.log(emailContent);
 
     }
-  sendEmail(emailContent, emails[i], position[i]);
+   sendEmail(emailContent, emails[i], position[i]);
   }
 
 }
 
-readCSV('https://raw.githubusercontent.com/CS2613-FA23/explorationactivity2-edouardlev/main/input.csv');
-
+if(process.argv.length <= 2) {
+  console.log("Please run program again with a link to raw csv in command line to process contacts." 
+  + "\n(Ex: node jobMailer.js linkHere)");
+} else {
+readCSV(process.argv[2]);
+}
 
 
