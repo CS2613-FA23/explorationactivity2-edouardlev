@@ -107,7 +107,7 @@ async function offerSender() {
       //console.log(emailContent);
 
     }
-   //await sendEmail(emailContent, emails[i], position[i]);
+   await sendEmail(emailContent, emails[i], position[i]);
   }
 
 }
