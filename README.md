@@ -2,7 +2,7 @@
 # ExplorationActivity2 README.md
 ## By Edouard Levesque
 ### Which library my sample program demonstrates
-My library demonstrates the use of automated email sending with the use of of the [Nodemailer](https://nodemailer.com/) library. It is a library with the main purpose of simplifying the use of sending emails programatically.
+My library demonstrates the use of automated email sending with the [Nodemailer](https://nodemailer.com/) library. It is a library with the main purpose of simplifying the use of sending emails programatically.
 
 ### How to run my sample program
 
@@ -13,12 +13,12 @@ In order to run my sample program, you must install the library first by running
 
 My program uses a CSV file online (on GitHub) to import the contacts we want to send the mail to, therefore we do not need to have any additional local files other than the program.
 
-After installing the library you can run the program by typing in the program name followed by the link to the raw csv file. You can use the one provided below for testing. 
+After installing the library, you can run the program by typing in the program name followed by the link to the raw csv file. You can use the one provided below for testing. 
 
 ```console
 node jobMailer.js https://raw.githubusercontent.com/CS2613-FA23/explorationactivity2-edouardlev/main/input.csv
 ```
-You can see what the format of the csv file looks like by following it in a browser. If you would like to use your own csv, upload to github, click the "raw" button on the page and copy the link.
+You can see what the format of the csv file looks like by following the link in a browser. If you would like to use your own csv, upload to github, click the "raw" button on the page and copy the link.
 
 The format of the csv file goes 
 1. number 
@@ -87,11 +87,11 @@ Message ID: <c4d74337-bdbc-ce00-c32a-bc60002d035b@gmail.com>
 edouardlevesque@Edouards-MacBook-Pro sourcecode % 
 ```
 
-Going to the website [mailinator.com]('https://www.mailinator.com/'). We can enter any user names of these users and see what they get on their end (these are not real people or used emails). For instance, let's see that ethan_thom@mailinator.com, who did in fact get the fake job.
+Visiting the website [mailinator.com]('https://www.mailinator.com/'), we can enter any user names of these users and see what they get on their end (these are not real people or used emails). For instance, let's see what ethan_thom@mailinator.com, who did in fact get the fake job, receive.
 
 ![inp1](https://github.com/CS2613-FA23/explorationactivity2-edouardlev/blob/main/enter-email.jpg?raw=true)
 
-We enter ethan_thom in the 'Enter public Mailinator Inbox' field.
+We then enter ethan_thom in the 'Enter public Mailinator Inbox' field.
 The latest email should be the one we just sent.
 
 ![inp2](https://github.com/CS2613-FA23/explorationactivity2-edouardlev/blob/main/inbox-preview.jpg?raw=true)
@@ -100,7 +100,7 @@ The latest email should be the one we just sent.
 
 We can see the email correctly was personalised with the name, job position, and with the fact he got the job. Now let's see what it looks like for someone who did not get the position.
 
-![inp4](https://github.com/CS2613-FA23/explorationactivity2-edouardlev/blob/main/email-preview.jpg?raw=true)
+![inp4](https://github.com/CS2613-FA23/explorationactivity2-edouardlev/blob/main/failed-candidate.jpg?raw=true)
 
 
 

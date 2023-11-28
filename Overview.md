@@ -4,7 +4,7 @@
 ### Nodemailer
 ### The purpose
 
-Nodemailer is a Node.js module which allows us to send emails from our server or machine easily. It is a module that does not required dependencies so no external resources are required for it to work properly. It can help send about any type of email. Such as plain text, with attachments, or html (what I used for my program). It sends emails through any SMTP server or Gmail/outlook etc. If using main email providers we must use workarounds as these normally have higher security settings that Nodemailer can handle. Nodemailer works with any unicode character so we are able to send emojis and more complex characters. [ref](https://www.turing.com/kb/comprehensive-guide-to-sending-an-email-using-nodemailer)
+Nodemailer is a Node.js module that allows us to send emails from our server or machine easily. It is a module that does not require dependencies, so no external resources are required for it to work properly. It can help send about any type of email, such as plain text, with attachments, or HTML (what I used for my program). It sends emails through any SMTP server or a large email provider. If using main email providers, we must use workarounds, as these normally have higher security settings than Nodemailer can handle. Nodemailer works with any unicode character, so we are able to send emojis and more complex characters. [ref](https://www.turing.com/kb/comprehensive-guide-to-sending-an-email-using-nodemailer)
 
 ### How to use it
 #### The following will show you how to use Nodemailer with Gmail.
@@ -14,7 +14,7 @@ Assuming node is installed on your computer, we must first install the nodemaile
  npm install nodemailer
 ```
 
-We must setup our Gmail account to be able to proceed. Head to the 2 factor authentification settings in your Google Account. Scroll down and click on "App passwords".
+We must setup our Gmail account to be able to proceed. Make sure your 2FA Gmail settings are turned on. Head to the 2 factor authentification settings in your Google Account. Scroll down and click on "App passwords".
 
 ![inp1](https://github.com/CS2613-FA23/explorationactivity2-edouardlev/blob/main/app-password-preview.jpg?raw=true)
 
@@ -23,7 +23,7 @@ Then, you can give a name to your Nodemailer project and click "create". Save th
 ![inp2](https://github.com/CS2613-FA23/explorationactivity2-edouardlev/blob/main/creat-app-pw.jpg?raw=true)
 
 
-Then, create a new program where you want to be using Nodemailer. The following is what we need for Nodemailer to function.
+Then, create a new program where you want to use Nodemailer. The following is what we need for Nodemailer to function.
 
 Next we can put the require('nodemailer') at the top and then make the transport with the password we just generated. The transporter is what sends the emails.
 
@@ -51,7 +51,7 @@ transpo.verify(function(error, success) {
 });
 ```
 
-Next, we're going to prepare a basic email to be sent. The from will be the email from auth which we set up a bit earlier. You can choose the to and the subject will be what the recipient gets as the subject. Here the email content is pretty simple, though instead of text we can use html instead to send. 
+Next, we're going to prepare a basic email to be sent. The from will be the email from "auth" which we set up a bit earlier. You can choose the to and the subject will be what the recipient gets as the subject. Here the email content is pretty simple, though instead of text we can use html instead to send. 
 
 ```console
 let mailOptions = {
@@ -62,7 +62,7 @@ let mailOptions = {
     };
 ```
 
-The above email content is pretty simple, though instead of text we can use html instead to send. 
+The above email content is pretty simple, though instead of text, we can use HTML to send. 
 
 ```console
 
@@ -79,7 +79,7 @@ let mailOptions = {
 };
 ```
 
-If you wish to add in attachments, you can place an attachment field under your text/html field.
+If you wish to add attachments, you can place an attachment field under your text/HTML field.
 
 ```console
 attachments: [
@@ -91,7 +91,7 @@ attachments: [
   ]
 ```
 
-The last step to all this is to send the email. The function to do this may also report errors if one were to arise.
+The last step is to send the email. The function to do this may also report errors if one were to arise.
 
 ```console
 transporter.sendMail(mailOptions, function(err, data) {
@@ -132,7 +132,7 @@ var transporter = nodemailer.createTransport({
 
 #### Custom headers
 
-The average message being sent with nodemailer does not need changes with the headers. Some headers include from, to, subject.
+The average message being sent with nodemailer does not need changes with the headers. Some headers include from, to, and subject.
 
 ```console
 let mailOptions = {
@@ -151,14 +151,14 @@ let mailOptions = {
 ### When it was created
 
 Nodemailer was created in 2010. It was brought up because according to them there was no good options to send mail back then.
-
+[ref](https://nodemailer.com/)
 ### Why I selected this library
 
-I selected this library as it seemed pretty straightforward, and it is. I do not mean I chose it because it seemed like the easier option, but because is does not add too much unneeded fluff that some other libraries tend to have. For this, I feel like I could have a stronger knowledge about most of this library rather than only part of a larger library (like how my last exploration activity was).
+I selected this library as it seemed pretty straightforward, and it is. I do not mean I chose it because it seemed like the easier option, but because is does not add too much unneeded fluff that some other libraries tend to have. For this, I feel like I could have a stronger knowledge about most of this library rather than only part of a larger library (like my last exploration activity).
 
 ### How did learning this influence my knowledge of the language?
 
-This language made me dig deeper into some parts of javascript. For instance, I was not sure when to use async, but this was the perfect project to practice with it. As when I did not use the await keyword in some parts the program would only send some emails because it was going too fast. After using it everything worked smoothly. As I have been comfortable with Javascript for some time I believe that that was the biggest piece of info I learned.
+This language made me dig deeper into some parts of Javascript. For instance, I was not sure when to use async, but this was the perfect project to practice with it. As when I did not use the await keyword, the program would only send some emails as it was going too fast. After using it, everything worked smoothly. As I have been comfortable with Javascript for some time, I believe that was the biggest piece of info I learned.
 
 
 ### How my experience with this library was
